@@ -1,11 +1,24 @@
 {
-  "name": "sovetbot_engine",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "sovetbot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "bot.ts",
+    "scripts": {
+        "dev": "nodemon bot.ts",
+        "start": "ts-node bot.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cross-env": "^7.0.3",
+        "node-telegram-bot-api": "^0.56.0",
+        "redux": "^4.1.2",
+        "ts-node": "^10.5.0"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.21",
+        "@types/node-telegram-bot-api": "^0.56.0",
+        "@types/redux": "^3.6.0",
+        "nodemon": "^2.0.15"
+    }
 }
